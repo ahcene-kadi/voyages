@@ -1,0 +1,102 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ;
+}
+
+img {
+  width: 100%;
+  height: m-content;
+}
+
+header {
+  opacity: 0.7;
+  background: url(1_6IiGNmO-Am-8Rxin1hwbzw.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body {
+  background: white;
+  height: 100vh;
+}
+nav {
+  width: 100%;
+}
+
+.liste-items {
+  display: flex;
+  justify-content: center;
+  color: #f1f1f1;
+  list-style-type: none;
+  height: 100%;
+  line-height: 50px;
+  font-size: 22px;
+}
+.items {
+  cursor: pointer;
+  margin: 0 30px;
+  flex-shrink: 0;
+}
+.items span {
+  font-size: 10px;
+}
+.items:nth-child(2) {
+  margin-left: ;
+}
+
+/* Sous Liste */
+
+.sous-liste {
+  position: relative;
+  top: -2px;
+  display: none;
+}
+.items-sous-liste {
+  list-style-type: none;
+  text-align: center;
+  padding: 0 10px;
+  background: brown;
+  border-radius: 4px;
+  border: 1px solid rgb(167,167,167);
+}
+
+
+.items-sous-liste:hover {
+  background: violet;
+  height: 50px;
+}
+.items-sous-liste:nth-child(2) {
+  height: 50px;
+  width: 130px;
+}
+
+.items:hover > ul {
+  display: block;
+}
+/* Sous liste 2 */
+
+.sous-liste2 {
+  position: relative;
+  left: 115px;
+  top: -49px;
+  list-style-type: none;
+  background: brown;
+  display: none;
+}
+.items-sous-liste2 {
+  border-bottom: 0.5px solid rgb(167,167,167);
+  border-radius: 4px;
+}
+.items-sous-liste2:hover {
+  background: rgb(156,156,156);
+}
+
+.items > ul > .items-sous-liste:hover > ul {
+  display: block;
+}
