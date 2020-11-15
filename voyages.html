@@ -7,157 +7,57 @@
   <link rel="stylesheet" href="voyages.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="liste-items">
-          <li class="items">Accueil</li>
-          <li class="items">
-              Equipe
-              <span>&#9660;</span>
-              <ul class="sous-liste">
-                  <li class="items-sous-liste">
-                    Ahcène
-                    <span>&#x25BA;</span>
-                    <ul class="sous-liste2">
-                      <li class="items-sous-liste2">Islande</li>
-                      <li class="items-sous-liste2">Bali</li>
-                      
-                  </ul>
-                  </li>
-                  <li class="items-sous-liste">
-                    Phillipe
-                    <span>&#x25BA;</span>
-                    <ul class="sous-liste2">
-                      <li class="items-sous-liste2">Cambodge</li>
-                      <li class="items-sous-liste2">Cuba</li>
-                      
-                  </ul>
-                  </li>
-                  <li class="items-sous-liste">
-                      Zoheir
-                      <span>&#x25BA;</span>
-                      <ul class="sous-liste2">
-                          <li class="items-sous-liste2">Irlande</li>
-                          <li class="items-sous-liste2">Italie</li>
-                          
-                      </ul>
-                  </li>
-              </ul>
-          </li>
-          <li class="items">
-            Pays
-            <span>&#9660;</span>
-            <ul class="sous-liste">
-              <li class="items-sous-liste">Islande</li>
-              <li class="items-sous-liste">Bali</li>
-              <li class="items-sous-liste">Cambodge</li>
-              <li class="items-sous-liste">Cuba</li>
-              <li class="items-sous-liste">Irlande</li>
-              <li class="items-sous-liste">Italie</li>
-            </ul>  
-          </li>
-          
-          <li class="items">Contact</li>
-      </ul>
-  </nav>
-  </header>
-
+    <header id="flex_header">
+        <nav id="conteneur-menu">
+            <ul class="conteneur-element">
+                <li class="item-menu"><a href="voyages.html">Home</a></li>
+                <li class="item-menu">Equipe
+                    <ul id="sousmenu-equipe">
+                        <li class="item-sousmenu">Philippe
+                            <ul id="sousmenu-philippe">
+                                <li class="item-philippe"><a href="voyage1.html">Combodge</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="item-sousmenu">Ahcène
+                            <ul id="sousmenu-ahcène">
+                                <li class="item-ahcène"><a href="voyage3.html">Islande</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="item-sousmenu">Zoheir
+                            <ul id="sousmenu-zoheir">
+                                <li class="item-zoheir"><a href="voyage2.html">Moscow</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item-menu">Continent
+                    <ul id="sousmenu-continent">
+                        
+                        <li class="item-sousmenu">Asie
+                            <ul id="sousmenu-asie">
+                                <li class="item-asie"><a href="voyage1.html">Cambodge</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="item-sousmenu">Europe
+                            <ul id="sousmenu-europe">
+                                <li class="item-europe"><a href="voyage3.html">Islande</a></li>
+                                <li class="item-europe"><a href="voyage2.html">Moscow</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item-menu"><a href="formulaire.html">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
   
-    <main class="container">
-      <article class="home row">
+    <main>
 
-          <section class="col-10 aln-center align-center">
-
-              <h1 class="title-Section">Evasion.com</h1>
-              <br />
-              <br />
-              <hr>
-              <br />
-              <h2 class="sub-title-Section">De précieux conseils de voyage pour planifier vos évasions avec nos experts.
-              </h2>
-              <p class="sub-paragraf">
-                  <span class="image left"><img src="img/flying.jpg" alt="flying concept"></span> Vous consacrez une part importante de votre temps libre pour organiser le voyage de l'année. Aprés tant de sacrifices, il est important de référencer les
-                  bons sites, les endroits à ne pas rater , éviter le tourisme de masse et finalement optimiser au maximum cette opportunité de pouvoir partir.<br /> Evasion.com vous accompagne tout au long de ces préparatifs, avec l'aide de nos meilleurs
-                  spécialistes, afin de rendre ce voyage, une fois de plus, inoubliable. </p>
-          </section>
-      </article>
-
-      <br />
-
-      <article class="globe row">
-
-          <section class="col-10 aln-center align-center">
-              <h1 id="globe" class="title-Section-2">NOS GLOBE-TROTTERS</h1>
-              <br />
-              <br />
-              <hr>
-              <br />
-              <h2 class="sub-title-Section">Découvrez leurs connaissances, coups de coeur et affinités particulières, par pays.
-              </h2>
-              <div class="row aln-center">
-                  <div class="skill-card">
-                      <div class="skill-card__header orange"><img class="skill-card__icon" src="img/icons/.jpg" alt="phillipe logo" /></div>
-                      <section class="skill-card__body">
-                          <h2 class="skill-card__title">Phillipe</h2><span class="skill-card__duration"></span>
-                          <ul class="skill-card__knowledge">
-                              <li>Spécialiste des danses latines caliente</li>
-                              <li><a href="voyage1.html">Découverte Cambodge</a></li>
-                          
-                          </ul>
-                      </section>
-                  </div>
-
-                  <div class="skill-card">
-                      <div class="skill-card__header green"><img class="skill-card__icon" src="img/icons/.png" alt="zoheir Logo" /></div>
-                      <section class="skill-card__body">
-                          <h2 class="skill-card__title">Zoheir</h2><span class="skill-card__duration"></span>
-                          <ul class="skill-card__knowledge">
-                              <li>Spécialiste voyages sportifs</li>
-                              <li></li>
-                              <li><a href="voyage3.html">Découverte Malaisie</a></li>
-                      
-                          </ul>
-                      </section>
-                  </div>
-
-                  <div class="skill-card">
-                      <div class="skill-card__header blue"><img class="skill-card__icon" src="img/icons/.png" alt="ahcene Logo" /></div>
-                      <section class="skill-card__body">
-                          <h2 class="skill-card__title">Ahcène</h2><span class="skill-card__duration"></span>
-                          <ul class="skill-card__knowledge">
-                              <li>Spécialiste du froid</li>
-            
-                              <li><a href="voyage5.html">Découverte Islande</a></li>
-                              
-                          </ul>
-                      </section>
-                  </div>
-              </div>
-          </section>
-      </article>
-
-      <br />
-
-      <article class="home row">
-
-          <section class="col-10 aln-center align-center">
-
-              <h1 class="title-Section-3">CONTACTS</h1>
-              <br />
-              <br />
-              <hr>
-              <br />
-              <h2 class="sub-title-Section">Laissez nous vos impressions et suggestions.
-              </h2>
-              <p class="sub-paragraf">
-                  <span class="image right"><a href="contact.html"><img src="img/mail.jpg" alt="flying concept"></a></span> Vous rentrez de voyage ou connaissez particulièrement bien un pays; vous voulez nous faire des recommandations, des suggestions,
-                  apporter quelques précisions ou pourquoi pas nous faire des remontrances. Nous mettons à votre disposition ce <a href="contact.html"><b>formulaire de contact</b></a> pour reccueillir vos impressions et vos questions. Nous accordons un intérêt particulier à vos avis
-                  et vous répondrons dans les meilleurs délais.<br /> Si vous voulez participer à ce travail collaboratif vous pouvez aussi nous envoyer un 
-                  <a href="travail.html"><b>formulaire d'offre de travail</b></a>. Nous adorerions pouvoir vous faire participer à cette aventure
-                  collective.
-              </p>
-          </section>
-      </article>
+      
 
 
 
@@ -168,45 +68,31 @@
 
   <footer>
     <div class="AK-container-footer">
-       <div class="AK-bloc-footer-services">
-           <h3>Pays</h3>
-           <ul class="AK-liste-services">
-                 <li>Islande</li>
-                 <li>Cuba</li>
-                 <li>Malaisie</li>
-                 <li>Bali</li>
-                 <li>Cambodge</li>
-                 <li>Irlande</li>
+       <div class="AK-bloc-footer-destination">
+           <h3>Destination</h3>
+           <ul class="AK-liste-destination">
+                <li><a href="voyages3.html">Islande</a></li>
+                <li><a href="voyages1.html">Cambodge</a></li>
+                <li><a href="voyages2.html">Moscow</a></li>
            </ul>
        </div>
-       <div class="AK-bloc-footer-services">
-        <div class="AK-liste-contact"><h3>Nos services</h3>
-           <h3>Restons en contact</h3>
-           <p>555-555-555</p>
-           <p>peredebtp@xxxx.com</p>
-           <p>8 rue d'hozier 13002 Marseille
-           </p>
+       <div class="AK-bloc-footer-contact">
+        <div class="AK-liste-contact"><h3>Restons en contact</h3>
+                <p>555-555-555</p>
+                <p>voyage-voyage@xxxx.com</p>
+                <p>8 rue d'hozier 13002 Marseille
+                </p>
         </div>
-    </div>
-    <div class="AK-bloc-footer-services">
-     <h3>Les horaires</h3>
-     <ul class="AK-liste-horaires">
-           <li>Lun 9H-19H</li>
-           <li>Mar 9H-19H</li>
-           <li>Mer 9H-19H</li>
-           <li>Jeu 9H-19H</li>
-           <li>Ven 9H-16H</li>
-     </ul>
- </div>
- <div class="AK-bloc-footer-services">
-  <h3>Nos réseaux</h3>
-  <ul class="AK-liste-réseaux">
-        <li><a href=""><img src="" alt="">Facebook</a></li>
-        <li><a href=""><img src="" alt="">Twitter</a></li>
-        <li><a href=""><img src="" alt="">Instagram</a></li>
-        <li><a href=""><img src="" alt="">Printest</a></li>
-  </ul>
-</div>
+        </div>
+        <div class="AK-bloc-footer-réseaux">
+            <h3>Nos réseaux</h3>
+            <ul class="AK-liste-réseaux">
+                 <li><a href="https://fr-fr.facebook.com/"><img src="img/icons8-facebook-48.png" alt="logo facebook">Facebook</a></li>
+                 <li><a href="https://twitter.com/?lang=fr"><img src="img/icons8-logo-twitter-encadré-48.png" alt="logo twitter">Twitter</a></li>
+                 <li><a href="https://www.instagram.com/?hl=fr"><img src="img/icons8-instagram-48.png" alt="logo instagram">Instagram</a></li>
+                 <li><a href="https://www.pinterest.fr/"><img src="img/icons8-pinterest-48.png" alt="logo pinterest">Pinterest</a></li>
+            </ul>
+        </div>
     </div>
 
  </footer>
