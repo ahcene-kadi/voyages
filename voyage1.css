@@ -1,3 +1,378 @@
+/* CSS HEADER et FOOTER*/
+
+#flex_header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 10000;
+	height: 50px;
+}
+
+#conteneur-menu {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.conteneur-element {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	list-style: none;
+	color: white;
+	font-weight: bold;
+	height: 100%;
+}
+
+.item-menu {
+	cursor: pointer;
+	padding-top: 15px;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+
+/**Menu deroulant continent **/
+
+#sousmenu-continent {
+	transform: translateY(25px);
+	margin: -10px;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	display: none;
+	position: relative;
+	z-index: 1000;
+}
+
+.item-menu:hover #sousmenu-continent {
+	display: block;
+}
+
+.item-sousmenu:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.item-sousmenu {
+	list-style-type: none;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 10px;
+	border-bottom: solid grey 1px;
+}
+
+
+/*Menu deroulant equipe*/
+
+#sousmenu-equipe {
+	transform: translateY(35px);
+	margin: -20px;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	display: none;
+	position: relative;
+	z-index: 1000;
+}
+
+.item-menu:hover #sousmenu-equipe {
+	display: block;
+}
+
+.item-sousmenu-equipe {
+	list-style-type: none;
+	padding: 10px;
+	border-bottom: solid gray 1px;
+}
+
+.item-sousmenu-equipe:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.item-sousmenu-equipe a {
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+
+/* Menu déroulant equipe*/
+
+#sousmenu-equipe {
+	transform: translateY(25px);
+	margin: -10px;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	display: none;
+	position: relative;
+	z-index: 1000;
+}
+
+.item-menu:hover #sousmenu-contributeur {
+	display: block;
+}
+
+
+/*Sous menu deroulant Europe*/
+
+#sousmenu-europe {
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+
+.item-europe {
+	list-style-type: none;
+	padding: 10px;
+	border-bottom: solid gray 1px;
+}
+
+.item-europe:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.item-europe a {
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+.item-sousmenu:hover #sousmenu-europe {
+	display: block;
+}
+
+
+/*Sous Menu deroulant Asie*/
+
+#sousmenu-asie {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.4);
+	list-style: none;
+	height: 50%;
+	border: solid gray 1px;
+	display: none;
+}
+
+.item-asie {
+	padding: 10px;
+}
+
+.item-asie a {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+.item-asie:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.item-sousmenu:hover #sousmenu-asie {
+	display: block;
+}
+
+
+/*Sous menu deroulant Philippe*/
+
+#sousmenu-philippe {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.4);
+	list-style: none;
+	height: 34%;
+	border: solid gray 1px;
+	display: none;
+}
+
+.item-philippe {
+	list-style-type: none;
+	padding: 10px;
+	border-left: solid gray 1px;
+	border-bottom: solid gray 1px;
+}
+
+.item-philippe:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.item-philippe a {
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+.item-sousmenu:hover #sousmenu-philippe {
+	display: block;
+}
+
+
+/*Sous menu deroulant Ahcène*/
+
+#sousmenu-ahcène {
+	position: absolute;
+	left: 100%;
+	top: 33%;
+	background: rgba(0, 0, 0, 0.4);
+	list-style: none;
+	height: 34%;
+	border: solid gray 1px;
+	display: none;
+}
+
+.item-ahcène {
+	list-style-type: none;
+	padding: 10px;
+	border-bottom: solid gray 1px;
+}
+
+.item-ahcène:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.item-ahcène a {
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+.item-sousmenu:hover #sousmenu-ahcène {
+	display: block;
+}
+
+
+/*Sous Menu deroulant Zoheir*/
+
+#sousmenu-zoheir {
+	position: absolute;
+	left: 100%;
+	top: 66%;
+	background: rgba(0, 0, 0, 0.4);
+	list-style: none;
+	height: 34%;
+	border: solid gray 1px;
+	display: none;
+}
+
+.item-zoheir {
+	padding: 10px;
+}
+
+.item-zoheir:nth-child(2) {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.item-zoheir a {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+.item-zoheir:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.item-sousmenu:hover #sousmenu-zoheir {
+	display: block;
+}
+
+.item-menu a {
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+
+/*footer*/
+
+footer {
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0.5;
+	color: white;
+	width: 100%;
+	border-top: 1px solid black;
+	flex-shrink: 0;
+}
+
+.AK-container-footer {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+	padding: 50px 0 50px;
+	color: whitesmoke;
+}
+
+.AK-bloc-footer-destination h3,
+.AK-bloc-footer-contact h3,
+.AK-bloc-footer-réseaux h3 {
+	font-size: 20px;
+	padding-bottom: 20px;
+	color: black;
+}
+
+.AK-liste-contact p {
+	padding: 5px 0px;
+}
+
+.AK-liste-destination,
+.AK-liste-contact,
+.AK-liste-réseaux {
+	list-style-type: none;
+}
+
+.AK-liste-destination li {
+	padding: 2px 0;
+}
+
+.AK-liste-réseaux a,
+.AK-liste-destination a {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+}
+
+.AK-liste-réseaux a:hover,
+.AK-liste-destination a:hover {
+	color: rgb(167, 248, 6);
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 1300px) {
+	.AK-container-footer {
+		width: 700px;
+		flex-wrap: wrap;
+	}
+	.AK-bloc {
+		width: 40%;
+		margin: 0 0;
+	}
+	.AK-bloc:nth-child(1) {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.AK-container-footer {
+		width: 320px;
+	}
+	.AK-bloc {
+		width: 300px;
+		margin: 30px 30px;
+	}
+	.AK-bloc:nth-child(1) {
+		margin-bottom: 0;
+  }
+}
+
+/* CSS de voyage1*/
 body {
   display: flex;
   flex-direction: column;
